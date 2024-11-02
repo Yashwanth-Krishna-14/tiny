@@ -1,0 +1,299 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF0E6;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FF7F50;
+    padding: 1rem;
+  }
+  
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    color: #FFE4B5;
+  }
+  
+  .landing-page {
+    text-align: center;
+    padding: 2rem;
+    background-color: #FFE4B5;
+  }
+  
+  .landing-page h1 {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .landing-page p {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .landing-page button {
+    background-color: #CD5C5C;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .video-container {
+    margin: 2rem 0;
+   
+  }
+
+
+  .rounded-video {
+    border-radius: 10px; /* Adjust the radius as needed */
+    overflow: hidden;
+  }
+
+  .landing-page button:hover {
+    background-color: #FF7F50;
+  }
+  
+  .menu-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #FF7F50;
+    color: #ffffff;
+  }
+  
+  .menu-item h2 {
+    margin: 0;
+  }
+  
+  .menu-item button {
+    background-color: #FFE4B5;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .menu-item button:hover {
+    background-color: #CD5C5C;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #FF7F50;
+    color: #ffffff;
+  }
+  
+  td {
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .add-button {
+    background-color: #FF7F50;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: #CD5C5C;
+  }
+  
+  .remove-button {
+    background-color: #FFE4B5;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .remove-button:hover {
+    background-color: #CD5C5C;
+  }
+
+
+  .auth-page {
+    text-align: center;
+    padding: 2rem;
+    background-color: #FFE4B5;
+  }
+  
+  .auth-page h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .auth-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .auth-page form div {
+    margin-bottom: 1rem;
+  }
+  
+  .auth-page form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .auth-page form input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .auth-page form button {
+    background-color: #CD5C5C;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .auth-page form button:hover {
+    background-color: #FF7F50;
+  }
+  
+  .auth-page button {
+    background-color: #FF7F50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .auth-page button:hover {
+    background-color: #CD5C5C;
+  }
+
+  /* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #de670c;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #ffe44dd8;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+.fancy-font {
+  font-family:"baskerville";
+ 
+  color: #ffffff; /* Indigo color */
+}
